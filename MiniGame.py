@@ -2,50 +2,51 @@
 import time 
 import pygame, sys, time
 
+
+
 pygame.init()
-music_file = "/Users/cwitzer/Documents/Music background/Music/Harvest Dawn.mp3"
-music_file2 = "/Users/cwitzer/Documents/Music background/Music/Pokemon RedBlue Opening.mp3"
-transition_effect = "/Users/cwitzer/Documents/Music background/Sound effects/Video Game Start Sound Effect.mp3"
-typingsound_effect = "/Users/cwitzer/Documents/Music background/Sound effects/typing sound effect .mp3"
-walking_effect = "/Users/cwitzer/Documents/Music background/Sound effects/walking noise.mp3"
-bushsound_effect = "/Users/cwitzer/Documents/Music background/Sound effects/Bush.wav"
-click_sound = "/Users/cwitzer/Documents/Music background/Sound effects/Pokemon (A Button) - Sound Effect (HD).mp3"
-woodswalking = "/Users/cwitzer/Documents/Music background/Sound effects/Walking In The Woods Outdoors (Free Sound Effect Download).mp3"
-sword = "/Users/cwitzer/Documents/Music background/Sound effects/sword drawn.mp3"
-wolf_attack_sound = "/Users/cwitzer/Documents/Music background/Sound effects/wolf sound.mp3"
-battle_music = "/Users/cwitzer/Documents/Music background/Music/Let the Battles Begin! - Super Smash Bros. Ultimate.mp3"
-stabbing_sound = "/Users/cwitzer/Documents/Music background/Sound effects/stabbing.mp3"
-path2_sound = "/Users/cwitzer/Documents/Music background/Music/path2background music.mp3"
-stranger_sound = "/Users/cwitzer/Documents/Music background/Sound effects/Stranger noise.mp3"
-meme_music = "/Users/cwitzer/Documents/Music background/Music/Undertale OST_ 023 - Shop.mp3"
-meme_music2 = "/Users/cwitzer/Documents/Music background/Music/Kirby dream land theme song.mp3"
-finding_princess = "/Users/cwitzer/Documents/Music background/Music/Hollow Knight OST - Hornet.mp3"
-entering_sound = "/Users/cwitzer/Documents/Music background/Sound effects/Hollow Knight OST - Hornet.mp3"
-you_failed = "/Users/cwitzer/Documents/Music background/Sound effects/You Failed!.mp3"
-YAY_sound= "/Users/cwitzer/Documents/Music background/Sound effects/YAYYY.mp3"
-oh_sound = "/Users/cwitzer/Documents/Music background/Sound effects/OHHH.mp3"
-traveling_music = "/Users/cwitzer/Documents/Music background/Music/VØJ x Narvent Memory Reboot (Over Slowed).mp3"
-traveling_speech = "/Users/cwitzer/Documents/Music background/Sound effects/SPEECH .mp3"
-entering_the_smash = "/Users/cwitzer/Documents/Music background/Music/Super Smash Bros. 4_ Main Theme.mp3"
-RUNNING_sound = "/Users/cwitzer/Documents/Music background/Sound effects/Sonic Running Sound Effect.mp3"
-door_opening = "/Users/cwitzer/Documents/Music background/Sound effects/door opening.mp3"
-evil_laugh = "/Users/cwitzer/Documents/Music background/Sound effects/Evil Laugh Sound Effect.mp3"
-help_me_sound = "/Users/cwitzer/Documents/Music background/Sound effects/HELP ME SOUND .mp3"
-battle_putin = "/Users/cwitzer/Documents/Music background/Music/Pokémon Red, Blue & Yellow - Trainer Battle Music (HQ).mp3"
-removing_coat = "/Users/cwitzer/Documents/Music background/Sound effects/removing coat .mp3"
-putin_sword = "/Users/cwitzer/Documents/Music background/Sound effects/drawling sword.mp3"
-finalboss_putin = "/Users/cwitzer/Documents/Music background/Music/Pokémon Red, Blue & Yellow - Trainer Battle Music (HQ).mp3"
-pound_effect_1 = "/Users/cwitzer/Documents/Music background/Sound effects/pound_effect_1.mp3"
-pound_effect_2 = "/Users/cwitzer/Documents/Music background/Sound effects/pound_effect_2.mp3"
-pound_effect_3 = "/Users/cwitzer/Documents/Music background/Sound effects/pound_effect_3.mp3"
-dash = "/Users/cwitzer/Documents/Music background/Sound effects/Zoro Dash Sound Effect FX.mp3"
-swordclash1 = "/Users/cwitzer/Documents/Music background/Sound effects/swordclash1.mp3"
-swordclash2 = "/Users/cwitzer/Documents/Music background/Sound effects/swordclash2.mp3"
-walkingin_castle = "/Users/cwitzer/Documents/Music background/Sound effects/Anime School Shoes Walking Sound Effect.mp3"
-running_sound_putin = "/Users/cwitzer/Documents/Music background/Sound effects/hallway running.mp3"
-final_scenemusic = "/Users/cwitzer/Documents/Music background/Music/Gunman Clive OST - Desert.mp3"
-ALRIGHt_final = "/Users/cwitzer/Documents/Music background/Sound effects/alright!!!.mp3"
-ending_final_music = "/Users/cwitzer/Documents/Music background/Music/zelda theme.mp3"
+music_file = "music.exe/Music/Harvest Dawn.mp3" #
+music_file2 = "music.exe/Music/Pokemon RedBlue Opening.mp3"#
+transition_effect = "SoundEffects.exe/Sound effects/Video Game Start Sound Effect.mp3" #
+typingsound_effect = "SoundEffects.exe/Sound effects/typing sound effect .mp3"# 
+walking_effect = "SoundEffects.exe/Sound effects/walking noise.mp3" #
+bushsound_effect = "SoundEffects.exe/Sound effects/Bush.wav" #
+click_sound = "SoundEffects.exe/Sound effects/Pokemon (A Button) - Sound Effect (HD).mp3" #
+woodswalking = "SoundEffects.exe/Sound effects/Walking In The Woods Outdoors (Free Sound Effect Download).mp3" #
+sword = "SoundEffects.exe/Sound effects/sword drawn.mp3" #
+wolf_attack_sound = "SoundEffects.exe/Sound effects/wolf sound.mp3" #
+battle_music = "music.exe/Music/Let the Battles Begin! - Super Smash Bros. Ultimate.mp3" #
+stabbing_sound = "SoundEffects.exe/Sound effects/stabbing.mp3" #
+path2_sound = "music.exe/Music/path2background music.mp3" #
+stranger_sound = "SoundEffects.exe/Sound effects/Stranger noise.mp3" #
+meme_music = "music.exe/Music/Undertale OST_ 023 - Shop.mp3" #
+meme_music2 = "music.exe/Music/Kirby dream land theme song.mp3" #
+finding_princess = "music.exe/Music/Hollow Knight OST - Hornet.mp3" #
+entering_sound = "SoundEffects.exe/Sound effects/Hollow Knight OST - Hornet.mp3" #
+you_failed = "SoundEffects.exe/Sound effects/You Failed!.mp3" #
+YAY_sound= "SoundEffects.exe/Sound effects/YAYYY.mp3" #
+oh_sound = "SoundEffects.exe/Sound effects/OHHH.mp3" #
+traveling_speech = "SoundEffects.exe/Sound effects/SPEECH .mp3" #
+entering_the_smash = "music.exe/Music/Super Smash Bros. 4_ Main Theme.mp3" #
+RUNNING_sound = "SoundEffects.exe/Sound effects/Sonic Running Sound Effect.mp3" #
+door_opening = "SoundEffects.exe/Sound effects/door opening.mp3" #
+evil_laugh = "SoundEffects.exe/Sound effects/Evil Laugh Sound Effect.mp3" #
+help_me_sound = "SoundEffects.exe/Sound effects/HELP ME SOUND .mp3" #
+battle_putin = "music.exe/Music/Pokémon Red, Blue & Yellow - Trainer Battle Music (HQ).mp3" #
+removing_coat = "SoundEffects.exe/Sound effects/removing coat .mp3" #
+putin_sword = "SoundEffects.exe/Sound effects/drawling sword.mp3" #
+finalboss_putin = "music.exe/Music/Pokémon Red, Blue & Yellow - Trainer Battle Music (HQ).mp3" #
+pound_effect_1 = "SoundEffects.exe/Sound effects/pound_effect_1.mp3" #
+pound_effect_2 = "SoundEffects.exe/Sound effects/pound_effect_2.mp3" #
+pound_effect_3 = "SoundEffects.exe/Sound effects/pound_effect_3.mp3" #
+dash = "SoundEffects.exe/Sound effects/Zoro Dash Sound Effect FX.mp3" #
+swordclash1 = "SoundEffects.exe/Sound effects/swordclash1.mp3" #
+swordclash2 = "SoundEffects.exe/Sound effects/swordclash2.mp3" #
+walkingin_castle = "SoundEffects.exe/Sound effects/Anime School Shoes Walking Sound Effect.mp3" #
+running_sound_putin = "SoundEffects.exe/Sound effects/hallway running.mp3" #
+final_scenemusic = "music.exe/Music/Gunman Clive OST - Desert.mp3" #
+ALRIGHt_final = "SoundEffects.exe/Sound effects/alright!!!.mp3" #
+ending_final_music = "music.exe/Music/zelda theme.mp3" #
 ###################
 
 click_sound = pygame.mixer.Sound(click_sound)
